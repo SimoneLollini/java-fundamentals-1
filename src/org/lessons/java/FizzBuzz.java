@@ -10,14 +10,22 @@ public class FizzBuzz {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in); // dichiaro il metodo che mi permette di far inserire dei dati all'utente
-        System.out.print("Quanti numeri vuoi stampare?");
-        int loopNum = Integer.parseInt(scan.nextLine()); // prima di passare alla riga successiva invoco il metodo scan e setto la variabile loopNum con il suo valore in entrata
-        scan.close(); //interrompo lo scan
+        boolean check;
+        int loopNum = 0;
 
-        if (loopNum > 1000) {
-            System.out.println("Il valore inserito dev'essere minore o uguale a 1000, valore inserito: " + loopNum);
-            return;
-        }
+        do {
+            System.out.println("Quanti numeri vuoi stampare?");
+            try {
+                loopNum = Integer.parseInt(scan.nextLine());
+                check = loopNum > 0 && loopNum <= 1000;
+            } catch (NumberFormatException nfe) {
+                check = false;
+                scan.close(); //interrompo lo scan
+            }
+            if (!check) {
+                System.out.println("Inserisci un numero maggiore di zero e minore o uguale a mille, numero inserito: " + loopNum);
+            }
+        } while (!check);
 
         for (int i = 1; i <= loopNum; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
