@@ -16,6 +16,9 @@ public class TrainTicket {
         System.out.print("La tua età:");
         int age = Integer.parseInt(scan.nextLine());
         //calcolo il prezzo totale del biglietto
+
+        scan.close(); //!! chiusura dello scan
+
         double totPrice = km * 0.21;
         //System.out.println(totPrice);
 
