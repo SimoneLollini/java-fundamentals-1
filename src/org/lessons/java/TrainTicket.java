@@ -2,10 +2,6 @@ package org.lessons.java;
 
 import java.util.Scanner;
 
-//        Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio, secondo queste regole:
-//        il prezzo del biglietto è definito in base ai km (0.21 € al km)
-//        va applicato uno sconto del 20% per i minorenni
-//        va applicato uno sconto del 40% per gli over 65
 //        Bonus: formattare il risultato con un numero limitato di decimali utilizzando la classe DecimalFormat
 public class TrainTicket {
 
