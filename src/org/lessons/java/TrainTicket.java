@@ -1,5 +1,6 @@
 package org.lessons.java;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 //        Bonus: formattare il risultato con un numero limitato di decimali utilizzando la classe DecimalFormat
@@ -35,8 +36,12 @@ public class TrainTicket {
             finalPrice = totPrice;
         }
 
+        // Salvo il metodo che mi permette di avere come valore finale un numero formato "umano"
+        DecimalFormat toDecimal = new DecimalFormat("#.##");
+
         //stampo a schermo il valore del prezzo finale
-        System.out.println(finalPrice);
+        //System.out.println(finalPrice);
+        System.out.println(toDecimal.format(finalPrice)); //formato con finalPrice formato umano
     }
 
 }

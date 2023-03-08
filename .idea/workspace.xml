@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c21f481-3786-416f-bdc5-00cdfb81a06b" name="Changes" comment="">
+    <list default="true" id="5c21f481-3786-416f-bdc5-00cdfb81a06b" name="Changes" comment="end FizzBuzz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/lessons/java/TrainTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/TrainTicket.java" afterDir="false" />
     </list>
@@ -48,7 +48,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "actions.on.save"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -60,6 +60,14 @@
       <option name="presentableId" value="Default" />
       <updated>1678280704045</updated>
     </task>
+    <task id="LOCAL-00001" summary="end FizzBuzz">
+      <created>1678285230426</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678285230426</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -72,5 +80,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="end FizzBuzz" />
+    <option name="LAST_COMMIT_MESSAGE" value="end FizzBuzz" />
   </component>
 </project>
