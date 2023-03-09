@@ -21,30 +21,21 @@ public class TrainTicket {
 
         double totPrice = km * 0.21;
         //System.out.println(totPrice);
-
-        //calcolo sconto under
-        double discountUnder = (totPrice * 0.20);
-
-        //calcolo sconto over
-        double discountOver = (totPrice * 0.40);
-
-        //salvo la variabile che conterrà il prezzo finale
-        double finalPrice;
-
+        
         if (age < 18) {
-            finalPrice = totPrice - discountUnder;
+            totPrice = totPrice - (totPrice * 0.20);
         } else if (age > 65) {
-            finalPrice = totPrice - discountOver;
+            totPrice = totPrice - (totPrice * 0.40);
         } else {
-            finalPrice = totPrice;
+            totPrice = totPrice;
         }
 
         // Salvo il metodo che mi permette di avere come valore finale un numero formato "umano"
         DecimalFormat toDecimal = new DecimalFormat("#.##");
 
         //stampo a schermo il valore del prezzo finale
-        //System.out.println(finalPrice);
-        System.out.println(toDecimal.format(finalPrice)); //formato con finalPrice formato umano
+        //System.out.println(totPrice);
+        System.out.println(toDecimal.format(totPrice)); //formato con totPrice formato umano
     }
 
 }
